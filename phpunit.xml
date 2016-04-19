@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./vendor/autoload.php" colors="true">
+
+    <testsuites>
+        <testsuite name="Design Patterns">
+            <directory suffix="Test.php">LevelA/Tests</directory>
+            <directory suffix="Test.php">LevelB/Tests</directory>
+            <directory suffix="Test.php">LevelC/Tests</directory>
+            <directory suffix="Test.php">LevelD/Tests</directory>
+            <directory suffix="Test.php">LevelE/Tests</directory>
+            <directory suffix="Test.php">LevelF/Tests</directory>
+            <directory suffix="Test.php">LevelG/Tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory>./vendor</directory>
+        </blacklist>
+    </filter>
+</phpunit>
