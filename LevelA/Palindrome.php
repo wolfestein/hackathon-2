@@ -22,6 +22,9 @@ class Palindrome
     {
         preg_match_all('/./us', $this->str, $ar);
         $res = implode('', array_reverse($ar[0]));
+
+        //TEST BRANCHE MASQUE
+
         return $this->str.$res;
     }
 
