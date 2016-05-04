@@ -13,10 +13,9 @@ class LevelATest extends \PHPUnit_Framework_TestCase
         $a = $tool->crypt('generateSalt');
         $b = $tool->crypt('hackSaltGenerator');
 
-        var_dump($a); var_dump($b);
         $this->assertEquals($a, $b);
     }
-/*
+
     public function testB()
     {
         $token = date('His');
@@ -37,5 +36,5 @@ class LevelATest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('cfcd208495d565ef66e7dff9f98764da', $b);
         $this->assertEquals('cfcd208495d565ef66e7dff9f98764da', $a);
-    }*/
+    }
 }
