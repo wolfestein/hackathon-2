@@ -34,7 +34,7 @@ class LevelATest extends \PHPUnit_Framework_TestCase
         $a = $tool->crypt('generateSalt');
         $b = $tool->crypt('hackSaltGenerator');
 
-        $this->assertEquals('cfcd208495d565ef66e7dff9f98764da', $b);
-        $this->assertEquals('cfcd208495d565ef66e7dff9f98764da', $a);
+        $this->assertEquals('3ddc451da17158fb67ff9a1eea502c65', $b);
+        $this->assertEquals('3ddc451da17158fb67ff9a1eea502c65', $a);
     }
 }
