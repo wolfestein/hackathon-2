@@ -33,6 +33,7 @@ class Debug
         );
 
         $array2 = array(
+            'token' => $this->token,
             'bar' => 'bar',
             'foo' => 'foo',
         );
