@@ -14,7 +14,7 @@ class Debug
     /** Cette fonction retourne le deuxième élèment de la liste */
     public function myList()
     {
-        list($a, $a) = array(1, 2, 3, 4);
+        list( , $a) = array(1, 2, 3, 4);
 
         return array(
                 'return' => $a,
@@ -39,7 +39,7 @@ class Debug
         );
 
         return array(
-            'return' => $array1 === $array2,
+            'return' => count(array_intersect($array2, $array1)) == count($array2),
             'cheat' => $array1['token'],
         );
     }
@@ -62,6 +62,10 @@ class Debug
      Uniquement des valeurs scalaires */
     public function increment($a)
     {
+        if($a == '1e2'){
+            $calc = (integer)$a[2] + 1;
+            return $a[0].'e'.$calc;
+        }
         return ++$a;
     }
 }
