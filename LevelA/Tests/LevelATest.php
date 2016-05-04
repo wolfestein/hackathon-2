@@ -2,38 +2,40 @@
 
 namespace Hackathon\LevelA\Tests;
 
-use Hackathon\LevelA\Palindrome;
+use Hackathon\LevelA\Sec;
 
 class LevelATest extends \PHPUnit_Framework_TestCase
 {
     public function testA()
     {
-        $palo = new Palindrome('abc');
+        $tool = new Sec('toto');
 
-        $this->assertEquals('abccba', $palo->generatePalindrome());
+        $a = $tool->crypt('generateSalt');
+        $b = $tool->crypt('hackSaltGenerator');
+
+        var_dump($a); var_dump($b);
+        $this->assertEquals($a, $b);
     }
-
+/*
     public function testB()
     {
-        $palo = new Palindrome('noel');
+        $token = date('His');
+        $tool = new Sec($token);
 
-        $this->assertEquals('noelleon', $palo->generatePalindrome());
+        $a = $tool->crypt('generateSalt');
+        $b = $tool->crypt('hackSaltGenerator');
+
+        $this->assertEquals($a, $b);
     }
 
     public function testC()
     {
-        $palo = new Palindrome('lö');
+        $tool = new Sec('lol');
 
-        $this->assertEquals('lööl', $palo->generatePalindrome());
-    }
+        $a = $tool->crypt('generateSalt');
+        $b = $tool->crypt('hackSaltGenerator');
 
-    public function testD()
-    {
-        $token = date('His');
-        $nekot = strrev($token);
-        $palo = new Palindrome($token."l\tö");
-
-        $this->assertEquals($token."l\töö\tl".$nekot, $palo->generatePalindrome());
-    }
-
+        $this->assertEquals('cfcd208495d565ef66e7dff9f98764da', $b);
+        $this->assertEquals('cfcd208495d565ef66e7dff9f98764da', $a);
+    }*/
 }

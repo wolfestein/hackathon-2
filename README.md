@@ -9,24 +9,12 @@ Vous avez le droit de vous aider d'internet. Si vous êtes carrement bloqué ;) 
 
 L'intérêt est de travailler dans un champ de mines (comme dans la vraie), d'intégrer de nouvelles fonctionnalitées sur du code existant sans péter le reste (comme dans la vraie vie).
 
-## Initialize the project
-
-Download the zip : https://github.com/robinduval/hackathon-dev-copy/archive/master.zip
+## Pour installer et tester chez vous !
 <pre>
-# unzip the tarball
-git init
-git add .
-git commit -m "first commit"
-git remote add origin git@github.com:YOURNAME/hackathon-dev-copy.git
-git push -u origin master
+./devtests.sh
 </pre>
 
-## To install
-<pre>
-./installAndTest.sh
-</pre>
-
-## To test
+## Pour tester chez vous
 <pre>
 ./test.sh
 </pre>

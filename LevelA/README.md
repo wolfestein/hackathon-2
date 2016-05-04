@@ -1,13 +1,8 @@
 ## Exercice du Niveau A
 
-*Savez-vous créer un palindrome ?*
-Un palindrome est un chaîne qui est identique,
-si elle est lue depuis le début ou la fin.
+Malheureusement, le développeur précédent à créer une fonction generateSalt()
+  qui est bien difficile à maintenir car elle est illisible.
 
-*Exemple*
-ABCCBA est un palindrome
-
-*Exercice*
-Il faut compléter la fonction generatePalindrome(),
-afin de créer un palindrome à partir de l'attribut $str
-
+C'est à vous de recréer la fonction qui permet de générer un sel.
+A vous de poser de trouver un moyen pour déchiffrer / comprendre
+  comment le sel a été généré pour générer vous même le sel, mais d'une manière plus lisible.

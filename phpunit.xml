@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="./vendor/autoload.php" colors="true">
+<phpunit
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+        timeoutForSmallTests="1"
+        timeoutForMediumTests="5"
+        timeoutForLargeTests="10"
+        >
 
     <testsuites>
         <testsuite name="Design Patterns">
